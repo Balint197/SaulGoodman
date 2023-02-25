@@ -42,4 +42,8 @@ Follow the instructions in the notebook and run the individual cells.
 
 Click on the link in the console to access the app.
 
-*Note: Right now we have not deployed the language model, as its a time and money consuming task. So the webapp isn't connected to the model, but the concept is the same. Our chosen solution (Haystack) provides an easy way for the model to communicate with web-based services using an API.*
+*Note: Right now we have not deployed the language model, as its a time and money consuming task. So the webapp isn't connected to the model, but the concept is the same. Our chosen solution (Haystack) provides an easy way for the model to communicate with web-based services using an API.* 
+
+### Scraping
+
+We used `scrape.py` to get our data. This process can easily ba automated. We didn't need to do a lot of manual work to make this source into a usable format.
