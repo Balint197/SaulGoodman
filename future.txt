@@ -1,0 +1,12 @@
+We used: 
+https://haystack.deepset.ai/tutorials/03_scalable_qa_system
+
+
+
+
+Fine-tuning on own data: 
+    * need to manually show Q&A examples w/ src in text
+        * there are tools for this, but still needs manual work
+    * can improve accuracy by 5-20% w/ 20 examples
+    * https://haystack.deepset.ai/tutorials/02_finetune_a_model_on_your_data
+
