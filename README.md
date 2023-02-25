@@ -12,7 +12,7 @@ Law is a complicated field of study, and it is extremely hard to navigate for th
 
 We used a translating service (deepL), and a pre-made chatbot LLM (ChatGPT) to format hungarian user prompts into a suitable format in english that works well with our model.
 
-We used a pre-trained question answering LLM in which we fed our legal data into. We obtained official hungarian law data from a specific field (employment law). Our model searches over this data and returns excellent answers. It also cites the place it found it, so sources can be checked for the answers validity. We translated the hungarian law into english for the input as it works better with the existing model, and we don't need to train an expensive custom LLM. However you can also try it using the hungarian data. 
+We used a pre-trained question answering LLM in which we fed our legal data into. We obtained official hungarian law data from a specific field (employment law). Our model searches over this data and returns excellent answers. It also cites the place it found it, so sources can be checked for the answers validity. We translated the hungarian law into english for the input as it works better with the existing model, and we don't need to train an expensive custom LLM. However you can also try it using the hungarian data, but the accuracy will be a lot worse than in english.
 
 We then rephrase our models answer using chatGPT into a longer sentence and translate it back into hungarian in the webapp.
 
@@ -29,6 +29,8 @@ Follow the instructions in the notebook and run the individual cells.
 ****ATTENTION:**** Before starting to run the cells, make sure you enable GPU runtime, as instructed in the notebook. Otherwise answering will be very slow. 
 
 **ATTENTION:** You will have to upload the source text file you wish to search over. You can't just run all cells. This is in step `Indexing Documents with a Pipeline`, other than this you can collapse the menus and just run the cell-groups.
+
+*Based on: [Haystack -  Scalable QA system](https://haystack.deepset.ai/tutorials/03_scalable_qa_system)*
 
 ### How to run the webapp
 
