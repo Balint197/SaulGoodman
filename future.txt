@@ -1,3 +1,6 @@
+HUN user prompt → EN DeepL → ChatGPT distill to prompt → Our model → ChatGPT into sentence → HU DeepL 
+
+
 We used: 
 https://haystack.deepset.ai/tutorials/03_scalable_qa_system
 
