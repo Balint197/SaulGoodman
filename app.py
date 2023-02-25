@@ -2,9 +2,10 @@ from flask import Flask, request, render_template
 import openai
 import deepl
 
-openai.api_key = BASSZUS
-auth_key = KULCS
-translator = deepl.Translator(auth_key)
+openai.api_key = ""
+deepl_key = ""
+
+translator = deepl.Translator(deepl_key)
 
 app = Flask(__name__)
 
