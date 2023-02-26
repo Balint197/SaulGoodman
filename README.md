@@ -2,6 +2,8 @@
 
 HACK3 hackathon 2023
 
+[Video](https://www.youtube.com/watch?v=vIq1h3aQqsI)
+
 We created an application that can respond to legal questions posed in natural language based on real Hungarian law data. 
 
 We adapted a language model to work with custom input text data. This means it will find an answer to your questions in the source provided by you, and also cite where it found it.
