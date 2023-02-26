@@ -2,8 +2,8 @@ from flask import Flask, request, render_template
 import openai
 import deepl
 
-openai.api_key = "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"
-auth_key = "f0fdeeed-e503-f96d-3ee1-748b1bb68de1:fx"
+openai.api_key = ""
+auth_key = ""
 translator = deepl.Translator(auth_key)
 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def my_form_post():                         #TÚL NAGY, DARABOLNI!
 
     messages = []
     base_prompt_in  = "Rephrase the following text into maximum 20 words without altering its meaning. Reword it in a way, so that it's easy to give legal advice on it for a lawyer: "
-    base_prompt_out0 = "I want you to act as a lawyer giving legal advice. I will provide you with a question to which I want you to answer with the given information. The question is """
+    base_prompt_out0 = "I want you to act as a lawyer giving legal advice. I will provide you with a question to which I want you to answer with the given information. Do not invent new information or make guesses. Answer in one sentence. The question is """
     base_prompt_out1 = " "" The information you will answer with as a lawyer is: "
 
     if request.method == 'POST':
@@ -28,7 +28,7 @@ def my_form_post():                         #TÚL NAGY, DARABOLNI!
         question_en = translator.translate_text(text=message, source_lang="HU", target_lang="EN-US")
 
         # reword with chatGPT
-        prompt_in = base_prompt_in + question_en
+        prompt_in = base_prompt_in + str(question_en)
         
         gpt_question = openai.Completion.create(
         model="text-davinci-003",

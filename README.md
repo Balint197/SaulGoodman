@@ -20,7 +20,7 @@ HUN user prompt → EN DeepL → prompted ChatGPT to distill input text to fit o
 
 ![Architecture](Saul.drawio.png "Architecture")
 
-However, you can just use the notebook file in english, as the accuracy of the model is lowered due to the back-and-forth text transformation and translations. To get the best results, ask questions you took from the `data\legal\source_en.txt` file. 
+However, you can just use the notebook file in english, as the accuracy of the model is lowered due to the back-and-forth text transformation and translations. To get the best results, ask questions you took from the `data\legal	\source_en.txt` file. 
 
 ### How to use the language model
 
