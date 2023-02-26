@@ -28,7 +28,7 @@ def my_form_post():                         #TÚL NAGY, DARABOLNI!
         question_en = translator.translate_text(text=message, source_lang="HU", target_lang="EN-US")
 
         # reword with chatGPT
-        prompt_in = base_prompt_in + str(question_en)
+        prompt_in = base_prompt_in + question_en.text
         
         gpt_question = openai.Completion.create(
         model="text-davinci-003",
@@ -46,7 +46,7 @@ def my_form_post():                         #TÚL NAGY, DARABOLNI!
         goodman_advice = "10032000-01425190-00000000" # for question: "What is the Administrative account number of the Ministry of National Resources?"
 
         # re-word as a lawyer into a complete sentence
-        prompt_out = base_prompt_out0 + question_en + base_prompt_out1 + goodman_advice
+        prompt_out = base_prompt_out0 + question_en.text + base_prompt_out1 + goodman_advice
 
         gpt_answer = openai.Completion.create(
         model="text-davinci-003",
