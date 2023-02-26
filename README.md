@@ -18,6 +18,7 @@ We then rephrase our models answer using chatGPT into a longer sentence and tran
 
 HUN user prompt → EN DeepL → prompted ChatGPT to distill input text to fit our model → Our model → prompted ChatGPT into full sentence based on original question → HU DeepL → display answer for user
 
+
 However, you can just use the notebook file in english, as the accuracy of the model is lowered due to the back-and-forth text transformation and translations. To get the best results, ask questions you took from the `data\legal\source_en.txt` file. 
 
 ### How to use the language model
@@ -46,4 +47,4 @@ Click on the link in the console to access the app.
 
 ### Scraping
 
-We used `scrape.py` to get our data. This process can easily ba automated. We didn't need to do a lot of manual work to make this source into a usable format.
+We used `scrape.py` to get our data from the Hungarian law site [njt.hu](njt.hu). This process can easily be automated. We didn't need to do a lot of manual work to make this source into a usable format.
